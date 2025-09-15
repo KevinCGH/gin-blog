@@ -1,0 +1,22 @@
+# GoLand IDE-specific files
+.idea/
+*.iml
+*.iws
+
+# Go build artifacts
+*.exe
+*.test
+*.prof
+*.out
+/bin/
+/pkg/
+
+# Dependency management
+# vendor/ is often ignored if using Go modules, unless specifically needed for vendoring
+# vendor/
+
+# Temporary files and logs
+*.log
+*.tmp
+.data/
+config.yml

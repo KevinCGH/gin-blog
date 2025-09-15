@@ -1,0 +1,33 @@
+Server:
+  Mode: debug # debug | release
+  Port: :8901
+  DbType: postgres # mysql | sqlite3 | postgres
+  DbAutoMigrate: true # 是否自动迁移数据库表结构
+  DbLogLevel: "error" # silent | error | warn | info
+JWT:
+  Secret: "secret"
+  Expire: 24  # 小时 hours
+  Issuer: "gin-blog"
+Mysql:
+  Host: <your mysql host>
+  Port: 5432
+  Config: "charset=utf8mb4&parseTime=True&loc=Local" # 其他配置，例如时区
+  Username: postgres
+  Password: postgres
+  Dbname: postgres
+Postgres:
+  Host: <your postgres host>
+  Port: 5432
+  Username: postgres
+  Password: postgres
+  Dbname: postgres
+SQLite:
+  Dsn: "test.db"
+Session:
+  Name: "gin-blog"
+  Salt: "salt"
+  MaxAge: 600 # second
+Log:
+  Level: "debug" # debug | info | warn | error
+  Format: "text" # text | json
+  Directory: "log"
